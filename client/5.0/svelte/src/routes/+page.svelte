@@ -17,10 +17,10 @@
 
 <micr-io id="HRpbsC" bind:this={micrio} data-logo="false" data-inittype="cover"></micr-io>
 
-<div>
+<main>
 	<h1>Welcome to this Micrio demo</h1>
 	<p>Visit <a href="https://doc.micr.io">doc.micr.io</a> to read the documentation</p>
-</div>
+</main>
 
 <style>
 	micr-io {
@@ -29,9 +29,8 @@
 		width: 100%;
 		top: 0;
 	}
-	div {
+	main {
 		position: relative;
 		z-index: 2;
 	}
-
 </style>
