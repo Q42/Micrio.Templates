@@ -12,7 +12,7 @@ export default defineConfig(({ command }) => ({
       'shared': path.resolve(rootDir, './shared'),
     }
   },
-  base: command === 'build' ? 'https://q42.github.io/Eicon.tech-station-game-poc/' : undefined,
+  base: command === 'build' ? 'https://q42.github.io/Micrio.Templates/client/5.0/react/' : undefined,
   build: {
     outDir: command === 'build' ? path.resolve(rootDir, './dist/client/5.0/react') : undefined,
   }

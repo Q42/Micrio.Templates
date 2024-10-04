@@ -16,7 +16,7 @@
 
 		<h2 id="demo">Demo</h2>
 		<span>
-			<a href="demo">View demo</a> | <a href={githubRoot + "/src/examples/demo"}>View source</a>
+			<a href="demo">View demo</a> | <a href={githubRoot + "/src/routes/demo"}>View source</a>
 		</span>
 	</div>
 </main>
