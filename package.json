@@ -1,0 +1,15 @@
+{
+  "name": "micrio.templates",
+  "version": "0.0.1",
+  "description": "Templates for using Micrio in different frameworks",
+  "scripts": {
+    "build": "npm run build:svelte && npm run build:react",
+    "build:svelte": "cd client/5.0/svelte && && npm run build",
+    "build:react": "cd client/5.0/react && npm run build",
+    "install:svelte": "cd client/5.0/svelte && npm install",
+    "install:react": "cd client/5.0/react && npm install",
+    "postinstall": "npm run install:svelte && npm run install:react"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,36 +1,22 @@
 <script lang="ts">
-	import type Micrio from 'Micrio'
-
-	import { onMount } from 'svelte';
-
-	import '../app.css';
-	
-	let micrio:Micrio.HTMLMicrioElement;
-
-	onMount(() => {
-		micrio.addEventListener('load', () => {
-			console.log('primary image loaded', micrio.$current);
-		}, {once: true});
-	})
-
+	const githubRoot = 'https://github.com/Q42/Micrio.Templates/tree/main/client/5.0/svelte';
 </script>
 
-<micr-io id="HRpbsC" bind:this={micrio} data-logo="false" data-inittype="cover"></micr-io>
+<main class="grid">
+	<div class="col-12">
+		<h1>Svelte examples</h1>
 
-<main>
-	<h1>Welcome to this Micrio demo</h1>
-	<p>Visit <a href="https://doc.micr.io">doc.micr.io</a> to read the documentation</p>
+		<nav>
+			<ul>
+				<li>
+					<a href="#demo">Demo</a>
+				</li>
+			</ul>
+		</nav>
+
+		<h2 id="demo">Demo</h2>
+		<span>
+			<a href="/demo">View demo</a> | <a href={githubRoot + "/src/examples/demo"}>View source</a>
+		</span>
+	</div>
 </main>
-
-<style>
-	micr-io {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		top: 0;
-	}
-	main {
-		position: relative;
-		z-index: 2;
-	}
-</style>

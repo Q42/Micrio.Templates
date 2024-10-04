@@ -1,6 +1,6 @@
-import './root.css'
+import './demo.css'
 
-function Root() {
+function Demo() {
     return (
         <>
             <micr-io id="HRpbsC" data-logo="false" data-inittype="cover"></micr-io>
@@ -13,4 +13,4 @@ function Root() {
     )
 }
 
-export default Root
+export default Demo
