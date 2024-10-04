@@ -15,7 +15,7 @@ const config = {
 			pages: process.argv.includes('dev') ? undefined : '../../../dist/client/5.0/svelte',
 		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+			base: process.argv.includes('dev') ? undefined : '/Micrio.Templates/client/5.0/svelte'
 		},
 	}
 };
